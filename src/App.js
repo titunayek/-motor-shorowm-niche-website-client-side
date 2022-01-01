@@ -10,6 +10,7 @@ import Home from './Components/Home/Home/Home';
 import AllServices from './Components/Home/Services/AllServices/AllServices';
 import Servises from './Components/Home/Services/Servises';
 import Login from './Components/Login/Login/Login';
+import PrivateRoute from './Components/Login/Login/PrivateRoute/PrivateRoute';
 import NotFound from './Components/NotFound/NotFound';
 import Herder from './Components/Shared/Herder/Herder';
 import AuthProvider from './contexts/AuthProvider';
@@ -25,8 +26,8 @@ function App() {
         <Route path="/services" element={<Servises />} />
         <Route path="/motors" element={<Exports />} />
         <Route path="/footer" element={<Footer />} />
-        
-        <Route exact path='/login' element={<Login/>}/>
+        <Route path="/booking" element={<PrivateRoute />} />
+        <Route path='/login' element={<Login/>}/>
         <Route path="/allServices" element={ <AllServices/>}/>
         
         <Route path="/booking/:serviceId" element={<Booking/>} />

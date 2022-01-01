@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 
 const Login = () => {
@@ -7,7 +8,9 @@ const Login = () => {
     return (
         <div>
             <h2>Please Login</h2>
-            <Button onClick={signInUsingGoogle}>Google Sign In</Button>
+            <Link to='/'><Button onClick={signInUsingGoogle}>Google Sign In</Button></Link>
+    
+            
         </div>
     );
 };

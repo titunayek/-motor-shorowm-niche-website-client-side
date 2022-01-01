@@ -7,7 +7,7 @@ import Allservice from './Allservice';
 const AllServices = () => {
     const [state, setState] = useState ([]);
     useEffect(() => {
-        fetch('http://localhost:5000/AllmotorCollection')
+        fetch('https://fast-caverns-89494.herokuapp.com/AllmotorCollection')
         .then(res => res.json())
         .then(data => setState(data));
     }, [ ]);

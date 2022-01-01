@@ -15,7 +15,7 @@ const Footer = () => {
                 Mishonnor, Lalmonirhat ,Rongpur.
                 </Card.Text>
                 
-                <Link to='/'><Button variant="primary">Go home</Button></Link>
+                <Link to='/'><Button variant="primary">Go back</Button></Link>
             </Card.Body>
             <Card.Footer className="text-muted">Next Updates 2 days ago</Card.Footer>
             </Card>
